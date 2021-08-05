@@ -1,0 +1,101 @@
+* {
+    margin: 2px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.flex {
+    display: flex;
+}
+
+.m-0 {
+    margin: 0;
+}
+
+.container {
+    width: 630px;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+    header {
+        height: 65px;
+    }
+
+        .site-title {
+            background-color: #fed531;
+            flex-grow: 1;
+        }
+
+        nav {
+            flex-grow: 1;
+        }
+
+            nav div {
+                height: inherit;
+                flex-grow: 1;
+                background-color: #fdc1cb;
+                flex-direction: row;
+            }
+
+    main {}
+
+        .post {
+            flex-grow: 5;
+            flex-direction: column;
+        }
+
+            .post-title {
+                height: 65px;
+                background-color: #afd8e5;
+                flex-grow: 1;
+            }
+
+            .post-body {}
+
+                .post-meta {
+                    height: 325px;
+                    background-color: #97ec94;
+                    flex-grow: 1;
+                }
+
+                .post-main {
+                    flex-direction: column;
+                    flex-grow: 4;
+                }
+                    
+                    .post-main-content {
+                        flex-grow: 2;
+                        background-color: #d3d3d3;
+                    }
+
+                    .post-main-image {
+                        flex-grow: 3;
+                        background-color: #fffc38;
+                    }
+
+            .right {
+                flex-grow: 1;
+                flex-direction: column;
+            }
+
+                .sidebar {
+                    background-color: #fcaa4c;
+                    flex-grow: 1;
+                }
+
+                .ads {
+                    background-color: #1c7e12;
+                    flex-grow: 1;
+                }
+
+                .other-stuffs {
+                    background-color: #db50f8;
+                    flex-grow: 1;
+                }
+
+
+    footer {
+        height: 65px;
+        background-color: #a08880;
+    }

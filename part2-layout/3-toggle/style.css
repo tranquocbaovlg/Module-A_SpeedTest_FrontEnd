@@ -1,0 +1,64 @@
+/* #00008b */
+/* #00ffff */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 16px;
+}
+
+body {
+    margin: 20px;
+}
+
+
+.off {
+    background-color: #00008b;
+}
+
+.on {
+    background-color: #00ffff;
+    align-items: flex-end;
+}
+
+input {
+    display: none
+}
+
+.toggle-switch {
+    display: flex;
+    width: 100px;
+    height: 50px;
+    border-radius: 25px;
+    background-color: violet;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.toggle-switch-active {
+    display: flex;
+    width: 100px;
+    height: 50px;
+    border-radius: 25px;
+    background-color: violet;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.switch-dot {
+    height: 20px;
+    width: 20px;
+    background-color: black;
+    border-radius: 50%;
+    margin: 15px;
+}
+
+input:checked + .toggle-switch > .switch-dot {
+    align-self: flex-end;
+}
