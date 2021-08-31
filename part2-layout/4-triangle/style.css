@@ -1,0 +1,46 @@
+/*CSS RESET*/
+
+*{
+	margin: 0;
+	padding: 0;
+}
+
+/*PUT YOUR CSS CODE HERE*/
+
+:root {
+    --sqrt2_2: 1.4142135623730951;
+    --dinh-tamgiac: 6.69872981077807%; /* (1-Math.sqrt(3)/2)/2 */
+    --day-tamgiac: 93.30127018922193%; /* (1-Math.sqrt(3)/2)/2 + Math.sqrt(3)/2 */
+    --size-triangle: 300px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#block {
+    height: var(--size-triangle);
+    width: var(--size-triangle);
+    animation: animate 2s linear 0s infinite alternate;
+}
+
+@keyframes animate {
+    from {
+        background-color: blue;
+        clip-path: polygon(0% var(--day-tamgiac), 50% var(--dinh-tamgiac), 50% var(--dinh-tamgiac), 100%  var(--day-tamgiac));
+    }
+    to {
+        background-color: yellow;
+        /* clip-path: polygon(0% 100%, 0% 0%, 100% 0%, 100% 100%); */
+        /* clip-path: polygon(0% 0%, 0% 100%, 100% 100%, 100% 0%); */
+        clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+    }
+}
+

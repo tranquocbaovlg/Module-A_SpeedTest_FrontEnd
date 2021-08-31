@@ -9,7 +9,7 @@ PART 1: Website Design
 PART 2: Layout
 2.01 Done
 2.02 Done
-2.03 loading...
+2.03 XXXXXX
 2.04
 2.05
 2.06
